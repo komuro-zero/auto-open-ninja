@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Auto Open O-Ninja",
+  "name": "おまとめ忍者",
   "version": "1.0",
-  "description": "Automatically opens stg.o-ninja.com when joining Meet, Zoom, or Teams meetings.",
-  "permissions": ["tabs", "storage", "scripting"],
+  "description": "Meet、Zoom、またはTeams会議に参加するときに自動的にstg.o-ninja.comを開きます。",
+  "permissions": ["tabs", "storage", "scripting", "notifications"],
   "background": {
     "service_worker": "background.js"
   },
@@ -13,6 +13,13 @@
     "https://teams.microsoft.com/*"
   ],
   "action": {
-    "default_title": "Auto Open O-Ninja"
+    "default_title": "Auto Open O-Ninja",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
 }

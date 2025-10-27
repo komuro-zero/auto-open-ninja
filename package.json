@@ -1,0 +1,16 @@
+{
+  "name": "auto-open-ninja",
+  "version": "1.0.0",
+  "description": "Chrome extension to auto-open O-Ninja on meeting URLs",
+  "main": "background.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "node build.js",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "husky": "^8.0.0"
+  }
+}

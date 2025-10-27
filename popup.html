@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おまとめ忍者</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://stg.o-ninja.com/logo.svg" alt="Logo" class="logo">
+    <div class="main-toggle">
+        <p>自動オープン有効化</p>
+      <button id="main-toggle-btn" class="ios-button">オン</button>
+    </div>
+    <div class="toggles">
+      <div class="toggle-item">
+        <span>話者認識</span>
+        <label class="switch">
+          <input type="checkbox" id="speaker-recognition">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-item">
+        <span>全音源入力</span>
+        <label class="switch">
+          <input type="checkbox" id="all-audio-input">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="toggle-item">
+        <span>起動方法</span>
+        <select id="window-tab-select">
+          <option value="tab">新規タブ</option>
+          <option value="window">新規ウィンドウ</option>
+        </select>
+      </div>
+      <div class="toggle-item">
+        <span>起動エンジン</span>
+        <select id="engine-select">
+          <option value="specialized">専門用語</option>
+          <option value="anything">なんでも認識</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
