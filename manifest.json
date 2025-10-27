@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Open O-Ninja",
+  "version": "1.0",
+  "description": "Automatically opens stg.o-ninja.com when joining Meet, Zoom, or Teams meetings.",
+  "permissions": ["tabs", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://meet.google.com/*",
+    "https://*.zoom.us/*",
+    "https://teams.microsoft.com/*"
+  ],
+  "action": {
+    "default_title": "Auto Open O-Ninja"
+  }
+}
