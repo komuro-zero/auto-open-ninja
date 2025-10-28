@@ -6,6 +6,7 @@ const { execSync } = require('child_process');
 const files = [
   'manifest.json',
   'background.js',
+  'content.js',
   'popup.html',
   'popup.js',
   'popup.css',
